@@ -1,10 +1,10 @@
 # DDPMGRN
 </p>
-SIGRN: Inferring Gene Regulatory Network with Soft Introspective Variational Autoencoders
+DMGRN: Enhancing Diffusion Models for Gene Regulatory Network Inference
 
 # Architecture
 
-![DDPMGRN](/images/DDPMGRN_arc.png)
+![DMGRN](images/DDPMGRN_arc.png)
 
 # Dependencies
 - python >=3.8
@@ -38,29 +38,22 @@ You can download the datasets from the provided link.
 # Runing
 The training command we used is as follows:
 ```
-cd DDPMGRN  #Navigate to the current working directory
+cd DMGRN  #Navigate to the current working directory
 python run.py
 ```
-# Result
-```
-0:1000_STRING:hHep
-<module 'regdiffusion.data' from '/home/jxlab/lry/lry_python/phd_code/EMOGI-master/scRNA/DDPMGRN_github/regdiffusion/data/__init__.py'>
-//home/jxlab/soft/miniconda3/envs/lry_torch/lib/python3.8/site-packages/torch/nn/modules/transformer.py:282: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
-100%|██████████████████████████████████████| 1000/1000 [00:08<00:00, 111.72it/s]
-{'AUROC': 0.642506259634387, 'AUPR': 0.05243550880885535, 'AUPRR': 2.137061597013709, 'EP': 876, 'EPR': 3.966917333333333}
-```
+
 
 
 
 # Usage
 
-SIGRN accepts input data in CSV, TSV format, or H5AD format as provided by Scanpy (genes in rows and cells in columns for TSV and CSV). The output of the  GRN inference task includes an adjacency matrix and various evaluation metrics, such as AUC, EPR, and AUPRR.
+DMGRN accepts input data in CSV, TSV format, or H5AD format as provided by Scanpy (genes in rows and cells in columns for TSV and CSV). The output of the  GRN inference task includes an adjacency matrix and various evaluation metrics, such as AUC, EPR, and AUPRR.
 
 # Baseline methods
 - Beeline https://github.com/Murali-group/Beeline/tree/master
 - DeepSEM https://github.com/HantaoShu/DeepSEM
-- GRN-VAE/DAZZLE https://github.com/TuftsBCB/dazzle/tree/main
+- DAZZLE https://github.com/TuftsBCB/dazzle/tree/main
+- RegDiffusion [https://github.com/TuftsBCB/dazzle/tree/main](https://github.com/TuftsBCB/RegDiffusion)
 
 # References
 
@@ -71,5 +64,6 @@ SIGRN accepts input data in CSV, TSV format, or H5AD format as provided by Scanp
   [2] Shu, H., Zhou, J., Lian, Q., Li, H., Zhao, D., Zeng, J., Ma, J.: Modeling gene regulatory networks using neural network architectures. Nature Computational Science 1(7), 491–501 (2021)
 
   [3] Zhu, H., Slonim, D.: Grn-vae: A simplified and stabilized sem model for gene regulatory network inference. bioRxiv pp. 2023–01 (2023)
+  [4] H. Zhu and D. K. Slonim, “Improved gene regulatory network inference from single cell data with dropout augmentation,” PLOS Computational Biology, vol. 21, no. 10, p. e1013603, 2025.
 
   
