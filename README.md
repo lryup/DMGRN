@@ -17,7 +17,7 @@ DMGRN: Enhancing Diffusion Models for Gene Regulatory Network Inference
 If you do not have Anaconda, please download and install Conda, then follow the steps below to create a Conda environment:
   (1) Clone the SIGRN repository from GitHub:
 ```
-git clone https://github.com/lryup/SIGRN.git
+git clone https://github.com/lryup/DMGRN.git
 ```
   (2) Create a new environment:
 ```
