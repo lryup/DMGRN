@@ -423,7 +423,7 @@ class DDPMGRN:
                 # pbar.set_description(
                 #     f' loss: {train_loss:.5f}, Change on Adj: {adj_diff:.5f},errG: {errG:.5f},'
                 #     f'errD: {errD:.5f},recD: {recD:.5f}')
-                #这个是显示进度条
+                #这个是显示进度条，先注释
                 # pbar.set_description(
                 #     f' loss: {train_loss:.5f}, Adj: {adj_diff:.5f},'
                 # )
