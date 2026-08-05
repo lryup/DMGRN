@@ -10,8 +10,8 @@ DMGRN: Enhancing Diffusion Models for Gene Regulatory Network Inference
 - python >=3.8
 - torch==2.1.0
 - scanpy==1.9.1
-- other detailed installation packages can be found in requirements.txt
-- CUDA toolkit 11.0 or later.
+- Other detailed installation packages can be found in `requirements.txt`
+- CUDA toolkit 11.0 or later(CUDA 12.4 also supported).
 
 # Installation
 If you do not have Anaconda, please download and install Conda, then follow the steps below to create a Conda environment:
@@ -38,8 +38,6 @@ The training command we used is as follows:
 cd DMGRN  #Navigate to the current working directory
 python run.py
 ```
-
-
 
 
 # Usage
