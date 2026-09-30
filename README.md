@@ -1,4 +1,4 @@
-# DDPMGRN
+# DMGRN
 </p>
 DMGRN: Enhancing Diffusion Models for Gene Regulatory Network Inference
 
